@@ -1,8 +1,8 @@
 # Site settings
-title: "FEDIXO"
+title: "Laribuck"
 author: "fed"
-hcprefix: "fedix"
-hcurl: "http://localhost:4000/"
+hcprefix: "li-"
+hcurl: "https://devomez.github.io/"
 
 url: "/"  # http://localhost:4000 /
 
