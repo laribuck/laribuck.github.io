@@ -15,7 +15,7 @@ baseurl: / # leave just a /
 markdown: kramdown
 source: .
 destination: ./_site
-permalink: /:slug
+permalink: /:slug.html
 sitemap_limit: 150.0
 # Default values
 defaults:
