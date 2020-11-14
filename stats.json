@@ -1,0 +1,13 @@
+---
+layout: null
+---
+[
+    {
+      "title":"{{site.title}}",
+      "url":"{{site.hcurl}}",
+      "image":"{{site.hcurl}}favicon.ico",
+      "total_posts":{{ site.posts | size | escape | jsonify }},
+      "first_post_date":"{{ site.posts.last.date | date_to_xmlschema }}",
+      "last_post_date":"{{ site.posts.first.date | date_to_xmlschema }}"
+    } 
+]
