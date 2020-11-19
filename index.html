@@ -304,7 +304,7 @@ layout: null
     var con_url = hcurl;
     var hcprefix = "{{ site.hcprefix }}";
     var hcauthor = "{{ site.author }}";
-    var hctime = "{{ site.time | date_to_xmlschema }}";
+    var hctm = "{{ site.title }}{{ site.time | date: '%s' }}";
 {% raw %}Sqrl.autoEscaping(true);
     Sqrl.defineFilter('nl2br', function(str) {
         return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, '$1' + '<br />' + '$2');
