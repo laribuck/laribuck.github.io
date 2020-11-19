@@ -2,7 +2,7 @@ name: jekyll
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/6 * * * *"
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
