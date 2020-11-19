@@ -462,11 +462,11 @@ layout: null
                         hcprefix:hcprefix
                     });
                     tmpl.parentNode.replaceChild(rendered_tmpl, tmpl);
-                    set_player_click();
-                    lazyLoadInstance.update();
                     add_script("https://responsivethemesstatic.github.io/static/wp.js");
                     add_script("https://static.addtoany.com/menu/page.js");
                     setdisq(con_url);
+		    set_player_click();
+                    lazyLoadInstance.update();
                     var rhttp = new XMLHttpRequest();
                         rhttp.open("GET", "https://www.cloudflare.com/cdn-cgi/trace", true);
                         rhttp.send();
@@ -495,14 +495,9 @@ layout: null
                     hcprefix: hcprefix
                 });
                 tmpl.parentNode.replaceChild(rendered_tmpl, tmpl);
-                lazyLoadInstance.update();
-                setdisq(con_url);
-                add_script("https://responsivethemesstatic.github.io/static/wp.js");
-                add_script("https://www.googletagmanager.com/gtag/js?id=UA-182097284-1");
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'UA-182097284-1');
+		add_script("https://responsivethemesstatic.github.io/static/wp.js");
+		setdisq(con_url);
+		lazyLoadInstance.update();
                 var rhttp = new XMLHttpRequest();
                     rhttp.open("GET", "https://www.cloudflare.com/cdn-cgi/trace", true);
                     rhttp.send();
